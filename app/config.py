@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 1440  # 24 hours
     database_url: str = "sqlite:///./game_dev.db"
-    cors_origins: List[str] = ["http://localhost:4200"]
+    cors_origins: List[str] = ["*"]
 
     model_config = {"env_file": ".env"}
 
